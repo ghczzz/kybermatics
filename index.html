@@ -1,1 +1,139 @@
-<h1>Welcome Kyber Pay!</h1> -- Yew Ho >
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Kyber-Pay</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontIcon.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="headerWrap">
+        <div id="header">
+          <a href="./index.html" class="logo" style="display: flex; align-items: center"><img src="image/logo.svg" /></a>
+
+          <nav>
+            <ul>
+              <li>
+                <a href="#homeLocator">Home</a>
+              </li>
+              <li>
+                <a href="#contact">About us</a>
+              </li>
+              <li>
+                <a href="#">Log in</a>
+              </li>
+              <li>
+                <a class="button" href="#serviceLocator">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="homeWrap">
+        <div id="home">
+          <div id="homeLocator" class="locator"></div>
+
+          <div class="content">
+            <div class="slogan">
+              <div>
+                <strong>Unleash the force of online payment</strong>
+              </div>
+              <br />
+              <div>
+                <span>Securely accept cards, digital wallets & alternative payments your customers know and trust</span>
+              </div>
+            </div>
+
+            <div>
+              <img style="width: 100%" src="image/home.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="benefitWrap">
+        <div id="benefit">
+          <div class="content">
+            <br />
+            <br />
+            <div class="title">
+              <strong>Benefits for your business</strong>
+            </div>
+
+            <div>One connection, access to our global payments ecosystem</div>
+            <div>A resilient platform + Cybersecurity</div>
+            <div>Partnership: Industry Expertise - Dedicated team of payment specialists with deep knowledge in industries including Travel, online retail, and Digital Goods & Services</div>
+            <div>Maximize revenue and improve authorizations with data-rich insights and dashboards</div>
+
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <div id="costWrap">
+        <div id="cost">
+          <div class="content">
+            <br />
+            <br />
+            <div class="title">
+              <strong>Transparent + Competitive + Customized Pricing for all businesses. No setup fee.</strong>
+            </div>
+            <div>Automated Smart Routing Plugin to optimize costs + maximize approvals. </div>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <div id="contactWrap">
+        <div id="contact">
+          
+
+          
+        </div>
+      </div>
+
+      <div id="copyrightWrap">
+        <div id="copyright">
+          <span>Copyright © 2021 Kyber-Pay Ltd. All Rights Reserved. <br/>All brand names and logos are the property of their respective owners, are used for identification purposes only, and do not imply product endorsement or affiliation with Kyber-Pay.</span>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+
+  <script>
+    $(window).scroll(function (e) {
+      let header = $("#headerWrap");
+      if (header.offset().top !== 0) {
+        if (!header.hasClass("shadow")) {
+          header.addClass("shadow");
+        }
+      } else {
+        header.removeClass("shadow");
+      }
+    });
+
+    $("nav a").click(function () {
+      if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+        var $target = $(this.hash);
+        $target = ($target.length && $target) || $("[name=" + this.hash.slice(1) + "]");
+        if ($target.length) {
+          var targetOffset = $target.offset().top;
+          $("html,body").animate(
+            {
+              scrollTop: targetOffset,
+            },
+            1000
+          );
+          return false;
+        }
+      }
+    });
+  </script>
+</html>

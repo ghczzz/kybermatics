@@ -1,0 +1,352 @@
+body {
+    font-family: Helvetica, Arial;
+    color: #58585b;
+    margin: 0;
+    padding: 0;
+}
+
+#headerWrap,
+#homeWrap,
+#benefitWrap,
+#costWrap,
+#contactWrap,
+#copyrightWrap {
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center;
+}
+
+#header,
+#home,
+#benefit,
+#cost,
+#contact,
+#copyright {
+    width: 1200px;
+}
+
+#header {
+    display: flex;
+    justify-content:space-between;
+}
+
+.button {
+    display: inline-block;
+    padding: 0 2em;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #ff0024;
+    border-radius: 4px;
+    transition: background-color .2s;
+}
+
+.locator {
+    height: 80px;
+}
+
+#header img {
+    height: 60px;
+}
+
+#home .content {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 50% 1fr;
+    -ms-grid-columns: 50% 1fr;
+}
+
+#home .slogan {
+    font-size: 45px;
+    padding-top: 10%;
+    -ms-grid-column: 1;
+}
+
+#benefitWrap {
+    background-color:  rgb(242, 242, 242);
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: #ff0024;
+    font-family: Segoe UI;
+}
+
+
+
+
+
+
+
+.rw-words span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    color: #F26C52;
+    animation: rotateWord 10s linear infinite;
+    animation-delay: 0s;
+}
+
+.rw-words span:nth-child(2) {
+    animation-delay: 5s;
+    color: #F26C52;
+}
+
+
+
+
+
+#headerWrap {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 80px;
+    background-color: #fff;
+    transition: box-shadow .2s;
+}
+
+#headerWrap.shadow {
+    box-shadow: 0 0 25px 0 rgba(52, 52, 52, .5);
+}
+
+#header a {
+    -ms-grid-column: 1;
+    display: -ms-flexbox;
+    -ms-grid-row-align: center;
+}
+
+#header div {
+    -ms-grid-column: 2;
+    -ms-grid-row-align: center;
+}
+
+#header nav {
+    -ms-grid-column: 3;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: end;
+}
+
+
+.language {
+    display: flex;
+}
+
+.language i {
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 25px;
+    width: 20px;
+}
+
+.language a {
+    align-self: baseline;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #58585b;
+    margin-right: 10px;
+}
+
+.language a:hover {
+    color: #F26C52;
+}
+
+nav {
+    justify-self: end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    align-self: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #58585b;
+}
+
+nav ul li a:hover:not(.button) {
+    color: #ff0024;
+}
+
+
+
+#home .homeImage {
+    -ms-grid-column: 2;
+    overflow: hidden;
+}
+
+
+
+ul.imageList {
+    list-style: none;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 33% 33% 33%;
+    -ms-grid-columns: 33% 33% 33%;
+}
+
+ul.imageList li {
+    justify-self: center;
+    -ms-grid-column-align: center;
+}
+
+.servicePanel {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    -ms-grid-columns: 25% 25% 25% 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.serviceCard1 {
+    -ms-grid-column: 1;
+}
+
+.serviceCard2 {
+    -ms-grid-column: 2;
+}
+
+.serviceCard3 {
+    -ms-grid-column: 3;
+}
+
+.serviceCard4 {
+    -ms-grid-column: 4;
+}
+
+.servicePanel .serviceCard {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.servicePanel .serviceCard:hover .serviceIcon {
+    color: #09B9B0;
+}
+
+#service,
+#whyus,
+#whyusLocator {
+    background-color: rgb(242, 242, 242);
+}
+
+.serviceIcon {
+    font-size: 50px;
+}
+
+.serviceTitle {
+    color: #F26C52;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.serviceDescription {
+    font-size: 14px;
+}
+
+.whyusPanel {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 50% 1fr;
+    -ms-grid-columns: 50% 1fr;
+}
+
+.whyusImage {
+    -ms-grid-column: 1;
+    padding-left: 10%;
+}
+
+.whyusDescription {
+    font-size: 20px;
+    -ms-grid-column: 2;
+    width: 80%;
+    color: rgb(58, 58, 58);
+    font-family: Calibri;
+}
+
+.companyPanel {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 50% 1fr;
+    -ms-grid-columns: 50% 1fr;
+}
+
+.companyDescription {
+    font-size: 20px;
+    -ms-grid-column: 1;
+    padding: 20px;
+    margin-left: 15%;
+    color: rgb(58, 58, 58);
+    font-family: Calibri;
+}
+
+.companyImage {
+    -ms-grid-column: 2;
+}
+
+#contactWrap {
+    background-color: #2E3C4C;
+    color: #fff;
+    font-size: 18px;
+}
+
+#contact {
+    padding-top: 30px;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: min-content auto;
+}
+
+.contactLogo {
+    -ms-grid-column: 1;
+}
+
+.contactInfo {
+    margin-left: 60px;
+    -ms-grid-column: 2;
+}
+
+.contactDescription {
+    width: 70%;
+}
+
+.companyName {
+    display: flex;
+    align-items: center;
+}
+
+.mailto {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactInfo i {
+    color: #FF6246;
+}
+
+#copyright {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
