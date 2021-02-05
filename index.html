@@ -2,11 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link href="./favicon.ico" rel="shortcut icon" type="images/x-icon">
+    <link href="./favicon.ico" rel="shortcut icon" type="images/x-icon" />
     <title>Kyber-Pay</title>
     <script src="js/jquery-3.4.1.min.js"></script>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
     <link href="css/fontIcon.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
 
   <body>
@@ -50,7 +52,8 @@
             </div>
 
             <div>
-              <img style="width: 100%" src="image/home.svg" />
+              <img style="width: 100%; padding-top: 20px" src="image/home.png" />
+              <img style="width: 100%; padding-top: 20px" src="image/payments.jpg" />
             </div>
           </div>
         </div>
@@ -65,11 +68,51 @@
               <strong>Benefits for your business</strong>
             </div>
 
-            <div>One connection, access to our global payments ecosystem</div>
-            <div>A resilient platform + Cybersecurity</div>
-            <div>Partnership: Industry Expertise - Dedicated team of payment specialists with deep knowledge in industries including Travel, online retail, and Digital Goods & Services</div>
-            <div>Maximize revenue and improve authorizations with data-rich insights and dashboards</div>
+            <div style="display: flex">
+              <div>
+                <strong>Access global payments ecosystem with one simple connection</strong>
+              </div>
 
+              <div>
+                <img style="width: 100%; padding-top: 20px" src="image/globalpayments.jpg" />
+              </div>
+            </div>
+
+            <br />
+            <br />
+            <br />
+
+            <div style="display: flex">
+              <div>
+                <strong>99.99% Uptime Platform + Big Data Cybersecurity = Better Customer Experiences + More Good Payments + Maximum Efficiency</strong>
+              </div>
+
+              <div>
+                <img style="width: 100%; padding-top: 20px" src="image/bigdata.jpg" />
+              </div>
+            </div>
+
+            <div style="display: flex">
+              <div>
+                <strong>Partnership: Industry Expertise - Dedicated team of payment specialists with deep knowledge in industries including Travel, online retail, and Digital Goods & Services</strong>
+              </div>
+
+              <div>
+                <img style="width: 100%; padding-top: 20px" src="image/moresales.jpg" />
+              </div>
+            </div>
+
+            <div style="display: flex">
+              <div>
+                <strong>Maximize revenue and improve authorizations with data-rich insights and dashboards</strong>
+              </div>
+
+              <div class="slider" style="width: 800px">
+                <div><img style="width: 100%" src="image/dashboards1.jpg" /></div>
+                <div><img style="width: 100%" src="image/dashboards2.jpg" /></div>
+                <div><img style="width: 100%" src="image/dashboards3.jpg" /></div>
+              </div>
+            </div>
             <br />
             <br />
           </div>
@@ -82,9 +125,17 @@
             <br />
             <br />
             <div class="title">
-              <strong>Transparent + Competitive + Customized Pricing for all businesses. No setup fee.</strong>
+              <strong>Flexible + Transparent + Competitive Pricing for all businesses. No setup fee.</strong>
             </div>
-            <div>Automated Smart Routing Plugin to optimize costs + maximize approvals. </div>
+            <div style="display: flex">
+              <div>
+                <strong>Automated Smart Routing Plugin to optimize costs + maximize approvals.</strong>
+              </div>
+
+              <div>
+                <img style="width: 100%; padding-top: 20px" src="image/pricing.jpg" />
+              </div>
+            </div>
             <br />
             <br />
           </div>
@@ -92,18 +143,13 @@
       </div>
 
       <div id="contactWrap">
-        <div id="contact">
-          
-
-          
-        </div>
+        <div id="contact"></div>
       </div>
 
       <div id="copyrightWrap">
         <div id="copyright">
-          <span>Copyright © 2021 Kyber-Pay Ltd. All Rights Reserved. <br/>All brand names and logos are the property of their respective owners, are used for identification purposes only, and do not imply product endorsement or affiliation with Kyber-Pay.</span>
+          <span>Copyright © 2021 Kyber-Pay Ltd. All Rights Reserved. <br />All brand names and logos are the property of their respective owners, are used for identification purposes only, and do not imply product endorsement or affiliation with Kyber-Pay.</span>
         </div>
-        
       </div>
     </div>
   </body>
@@ -135,6 +181,16 @@
           return false;
         }
       }
+    });
+
+    $(document).ready(function () {
+      $(".slider").slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        infinite: true,
+        arrows: false,
+      });
     });
   </script>
 </html>
