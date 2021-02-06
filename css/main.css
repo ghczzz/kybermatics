@@ -1,12 +1,22 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../webfonts/Montserrat-Regular.woff");
+}
+
+@font-face {
+  font-family: Montserrat_Bold;
+  src: url("../webfonts/Montserrat-ExtraBold.woff");
+}
+
 body {
-  font-family: Helvetica, Arial;
-  color: #58585b;
+  font-family: Montserrat, Arial;
   margin: 0;
   padding: 0;
 }
 
 #headerWrap,
 #homeWrap,
+#paymentsWrap,
 #benefitWrap,
 #costWrap,
 #contactWrap,
@@ -18,6 +28,7 @@ body {
 
 #header,
 #home,
+#payments,
 #benefit,
 #cost,
 #contact,
@@ -63,9 +74,13 @@ body {
 }
 
 #home .slogan {
-  font-size: 45px;
-  padding-top: 10%;
-  -ms-grid-column: 1;
+  padding-top: 100px;
+  padding-right: 50px;
+}
+
+#home .slogan .bold{
+  font-family: Montserrat_Bold;
+  font-size: 50px;
 }
 
 #benefitWrap {
