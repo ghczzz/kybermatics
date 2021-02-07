@@ -19,6 +19,9 @@ body {
 #paymentsWrap,
 #benefitWrap,
 #costWrap,
+#sendInfoWrap,
+#articleWrap,
+#aboutWrap,
 #contactWrap,
 #copyrightWrap {
   display: flex;
@@ -30,6 +33,9 @@ body {
 #payments,
 #benefit,
 #cost,
+#sendInfo,
+#article,
+#about,
 #contact,
 #copyright {
   width: 1200px;
@@ -49,7 +55,6 @@ body {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
   background-color: #ff0024;
@@ -88,10 +93,39 @@ body {
   font-size: 40px;
 }
 
-#benefit .content {
+#sendInfoWrap {
+  background-color: #4A2157;
+}
+
+#sendInfo .content {
   display: grid;
   grid-template-columns: 50% 1fr;
-  align-items: center;
+}
+
+#sendInfo .content .bold {
+  font-family: Montserrat_Bold;
+  font-size: 25px;
+}
+
+#article .content {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+#contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#copyrightWrap {
+  background-color: #2e3c4c;
+  color: #fff;
+}
+
+#copyright {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
@@ -105,19 +139,8 @@ body {
 
 
 
-.rw-words span {
-  position: absolute;
-  opacity: 0;
-  overflow: hidden;
-  color: #f26c52;
-  animation: rotateWord 10s linear infinite;
-  animation-delay: 0s;
-}
 
-.rw-words span:nth-child(2) {
-  animation-delay: 5s;
-  color: #f26c52;
-}
+
 
 #headerWrap {
   position: fixed;
@@ -151,30 +174,6 @@ body {
   -ms-grid-column-align: end;
 }
 
-.language {
-  display: flex;
-}
-
-.language i {
-  font-size: 20px;
-  padding-right: 10px;
-  padding-left: 25px;
-  width: 20px;
-}
-
-.language a {
-  align-self: baseline;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
-  color: #58585b;
-  margin-right: 10px;
-}
-
-.language a:hover {
-  color: #f26c52;
-}
-
 nav {
   justify-self: end;
 }
@@ -199,165 +198,4 @@ nav ul li a {
 
 nav ul li a:hover:not(.button) {
   color: #ff0024;
-}
-
-#home .homeImage {
-  -ms-grid-column: 2;
-  overflow: hidden;
-}
-
-ul.imageList {
-  list-style: none;
-  display: grid;
-  display: -ms-grid;
-  grid-template-columns: 33% 33% 33%;
-  -ms-grid-columns: 33% 33% 33%;
-}
-
-ul.imageList li {
-  justify-self: center;
-  -ms-grid-column-align: center;
-}
-
-.servicePanel {
-  display: grid;
-  display: -ms-grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  -ms-grid-columns: 25% 25% 25% 25%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.serviceCard1 {
-  -ms-grid-column: 1;
-}
-
-.serviceCard2 {
-  -ms-grid-column: 2;
-}
-
-.serviceCard3 {
-  -ms-grid-column: 3;
-}
-
-.serviceCard4 {
-  -ms-grid-column: 4;
-}
-
-.servicePanel .serviceCard {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.servicePanel .serviceCard:hover .serviceIcon {
-  color: #09b9b0;
-}
-
-#service,
-#whyus,
-#whyusLocator {
-  background-color: rgb(242, 242, 242);
-}
-
-.serviceIcon {
-  font-size: 50px;
-}
-
-.serviceTitle {
-  color: #f26c52;
-  font-weight: bold;
-  font-size: 16px;
-  padding-bottom: 10px;
-}
-
-.serviceDescription {
-  font-size: 14px;
-}
-
-.whyusPanel {
-  display: grid;
-  display: -ms-grid;
-  grid-template-columns: 50% 1fr;
-  -ms-grid-columns: 50% 1fr;
-}
-
-.whyusImage {
-  -ms-grid-column: 1;
-  padding-left: 10%;
-}
-
-.whyusDescription {
-  font-size: 20px;
-  -ms-grid-column: 2;
-  width: 80%;
-  color: rgb(58, 58, 58);
-  font-family: Calibri;
-}
-
-.companyPanel {
-  display: grid;
-  display: -ms-grid;
-  grid-template-columns: 50% 1fr;
-  -ms-grid-columns: 50% 1fr;
-}
-
-.companyDescription {
-  font-size: 20px;
-  -ms-grid-column: 1;
-  padding: 20px;
-  margin-left: 15%;
-  color: rgb(58, 58, 58);
-  font-family: Calibri;
-}
-
-.companyImage {
-  -ms-grid-column: 2;
-}
-
-#contactWrap {
-  background-color: #2e3c4c;
-  color: #fff;
-  font-size: 18px;
-}
-
-#contact {
-  padding-top: 30px;
-  display: grid;
-  display: -ms-grid;
-  grid-template-columns: min-content auto;
-}
-
-.contactLogo {
-  -ms-grid-column: 1;
-}
-
-.contactInfo {
-  margin-left: 60px;
-  -ms-grid-column: 2;
-}
-
-.contactDescription {
-  width: 70%;
-}
-
-.companyName {
-  display: flex;
-  align-items: center;
-}
-
-.mailto {
-  text-decoration: none;
-  color: #fff;
-}
-
-.contactInfo i {
-  color: #ff6246;
-}
-
-#copyright {
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
 }

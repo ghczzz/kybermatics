@@ -6,6 +6,7 @@
     <title>Kyber-Pay</title>
     <script src="js/jquery-3.4.1.min.js"></script>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/form.css" rel="stylesheet" type="text/css" />
     <link href="css/fontIcon.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -23,13 +24,13 @@
                 <a href="#homeLocator">Home</a>
               </li>
               <li>
-                <a href="#contact">About us</a>
+                <a href="#aboutLocator">About us</a>
               </li>
               <li>
                 <a href="#">Log in</a>
               </li>
               <li>
-                <a class="button" href="#serviceLocator">Contact us</a>
+                <a class="button" href="#contactLocator">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -176,13 +177,130 @@
         </div>
       </div>
 
+      <div id="sendInfoWrap">
+        <div id="sendInfo">
+
+          <div class="content" style="padding-top: 30px; padding-bottom: 30px;">
+            <div style="color: white; padding-left: 50px; display: flex; align-items: center;">
+              <div>
+                <div class="bold">Do you want to know more?</div>
+                <br>
+                <div style="font-size: 12px;">Fill out the form and we'll get in touch with you.</div>
+              </div>
+            </div>
+          
+            <div style="background-color: white; border-radius:5px; padding: 20px; width: 500px; font-size: 15px;" class="form-style-1">
+              <div>*Full Name</div>
+              <div><input style="width: 100%;" type="text" id="fullName" class="field-divided" placeholder="Joe Zebraffe" /></div>
+              <br>
+              <div>*Email Address</div>
+              <div><input style="width: 100%;" type="text" id="email" class="field-divided" placeholder="joe.zebraffe@bambora.com" /></div>
+              <br>
+              <div>*Phone Number</div>
+              <div><input style="width: 100%;" type="text" id="phone" class="field-divided" placeholder="+46 10 66 000 10" /></div>
+              <br>
+              <div>*Country</div>
+              <div><input style="width: 100%;" type="text" id="country" class="field-divided" placeholder="" /></div>
+              <br>
+              <div style="display: flex; justify-content: flex-end;">
+                <a class="button" onclick="send()" href="javascript:;">Submit</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="articleWrap">
+        <div id="article">
+          <br>
+          <br>
+          
+          <div>
+            <span>Trends and Insights</span>
+          </div>
+          <div>
+            <strong style="font-size: x-large;">The future of payments</strong>
+          </div>
+
+          <div class="content">
+            <div style="padding: 20px;">
+              <div><img style="width: 100%;" src="image/news1.png" /></div>
+              <div>How generation Z wants to shop</div>
+              <div>In order to attact the next generation of shoppers, retailer will have to invest even more in the shopping experience.</div>
+            </div>
+            <div style="padding: 20px;">
+              <div><img style="width: 100%;" src="image/news2.png" /></div>
+              <div>How generation Z wants to shop</div>
+              <div>In order to attact the next generation of shoppers, retailer will have to invest even more in the shopping
+                experience.</div>
+            </div>
+            <div style="padding: 20px;">
+              <div><img style="width: 100%;" src="image/news3.png" /></div>
+              <div>How generation Z wants to shop</div>
+              <div>In order to attact the next generation of shoppers, retailer will have to invest even more in the shopping
+                experience.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="aboutWrap">
+        <div id="about">
+          <div id="aboutLocator" class="locator"></div>
+          <div class="title" style="text-align: center;">
+            <strong>About us</strong>
+          </div>
+          <br>
+          <br>
+
+          <div style="display: flex; justify-content: center;">
+            <div style="width: 60%;">
+              <p>We are a global payment service provider with a strong focus to acquire e-Commerce merchants, who engage principally
+                in
+                cross-border e-commerce globally, by providing them direct access to global payment ecosystem. Our team consists of
+                industry experts that have worked at senior levels within the global e-commerce payments. With deep knowledge in
+                industries including Travel, online Retail, and Digital Goods & Services we can help optimize your payment performance
+                more effectively. By adopting the latest technology in artificial intelligence and machine learning, we strive to
+                create
+                data-driven performance optimizations, analytics and dashboards that are custom-built to the specific needs of your
+                industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="contactWrap">
-        <div id="contact"></div>
+        <div id="contact">
+          <div id="contactLocator" class="locator"></div>
+          <div class="title" style="text-align: center;">
+            <strong>Contact us</strong>
+          </div>
+          <br>
+
+          <div class="content">
+            <div style="padding: 30px;">
+              <div><strong style="font-size: large;">Sales inquiries</strong></div>
+              <div><a href="mailto:sales@kyber-pay.com">sales@kyber-pay.com</a></div>
+            </div>
+            <div style="padding: 30px;">
+              <div><strong style="font-size: large;">Customer Support</strong></div>
+              <div><a href="mailto:support@kyber-pay.com">support@kyber-pay.com</a></div>
+            </div>
+            <div style="padding: 30px;">
+              <div><strong style="font-size: large;">Referal partner</strong></div>
+              <div><a href="mailto:partner@kyber-pay.com">partner@kyber-pay.com</a></div>
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
       </div>
 
       <div id="copyrightWrap">
         <div id="copyright">
-          <span>Copyright © 2021 Kyber-Pay Ltd. All Rights Reserved. <br />All brand names and logos are the property of their respective owners, are used for identification purposes only, and do not imply product endorsement or affiliation with Kyber-Pay.</span>
+          <span>Copyright © 2021 Kyber-Pay. All rights reserved. All brand names and logos are the property of their respective owners, are used for identification
+          purposes only, and do not imply product endorsement or affiliation with Kyber-Pay.</span>
         </div>
       </div>
     </div>
@@ -226,5 +344,16 @@
         arrows: false,
       });
     });
+
+    function send() {
+      $.post("http://emailtunnal.gearhostpreview.com/contact/send", {
+        fullName: $("#fullName").val(),
+        email: $("#email").val(),
+        phone: $("#phone").val(),
+        country: $("#country").val(),
+      });
+
+      alert("Thanks!");
+    }
   </script>
 </html>
