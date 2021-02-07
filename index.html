@@ -196,26 +196,26 @@
             <div style="background-color: white; border-radius:5px; padding: 20px; width: 500px; font-size: 15px;" class="form-style-1">
               <div style=" display: flex;">
                 <div style="width: 50%; padding-right: 5px;">
-                  <div>*Full Name</div>
-                  <div><input style="width: 100%;" type="text" id="fullName" class="field-divided" placeholder="Joe Zebraffe" /></div>
+                  <div>Full Name *</div>
+                  <div><input style="width: 100%;" type="text" id="fullName" class="field-divided" placeholder="Matthias Feldmann" /></div>
                   <br>
-                  <div>*Email Address</div>
+                  <div>Email Address *</div>
                   <div><input style="width: 100%;" type="text" id="email" class="field-divided"
-                      placeholder="joe.zebraffe@bambora.com" />
+                      placeholder="matthias@kyber-pay.com" />
                   </div>
                   <br>
-                  <div>*Phone Number</div>
-                  <div><input style="width: 100%;" type="text" id="phone" class="field-divided" placeholder="+46 10 66 000 10" /></div>
+                  <div>Phone Number *</div>
+                  <div><input style="width: 100%;" type="text" id="phone" class="field-divided" placeholder="+760 589 8642" /></div>
                 </div>
                 <div style="width: 50%; padding-left: 5px;">
-                  <div>*Company Name</div>
+                  <div>Company Name *</div>
                   <div><input style="width: 100%;" type="text" id="companyName" class="field-divided" placeholder="" /></div>
                   <br>
-                  <div>*Company Website</div>
+                  <div>Company Website *</div>
                   <div><input style="width: 100%;" type="text" id="companySite" class="field-divided" placeholder="" />
                   </div>
                   <br>
-                  <div>*Country</div>
+                  <div>Country</div>
                   <div><input style="width: 100%;" type="text" id="country" class="field-divided" placeholder="" /></div>
                 </div>
               </div>
@@ -254,9 +254,7 @@
             </div>
             <div style="padding: 20px;">
               <div><img style="width: 100%;" src="image/news3.png" /></div>
-              <div>How generation Z wants to shop</div>
-              <div>In order to attact the next generation of shoppers, retailer will have to invest even more in the shopping
-                experience.</div>
+              <div><a target="_blank" href="https://www.csoonline.com/article/3390538/what-is-psd2-and-how-it-will-impact-the-payments-processing-industry.html">What is PSD2? And how it will impact the payments processing industry</a></div>
             </div>
           </div>
 
@@ -372,6 +370,8 @@
     });
 
     function send() {
+
+
       $.post("http://emailtunnal.gearhostpreview.com/contact/send", {
         fullName: $("#fullName").val(),
         email: $("#email").val(),
