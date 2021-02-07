@@ -194,17 +194,36 @@
             </div>
           
             <div style="background-color: white; border-radius:5px; padding: 20px; width: 500px; font-size: 15px;" class="form-style-1">
-              <div>*Full Name</div>
-              <div><input style="width: 100%;" type="text" id="fullName" class="field-divided" placeholder="Joe Zebraffe" /></div>
+              <div style=" display: flex;">
+                <div style="width: 50%; padding-right: 5px;">
+                  <div>*Full Name</div>
+                  <div><input style="width: 100%;" type="text" id="fullName" class="field-divided" placeholder="Joe Zebraffe" /></div>
+                  <br>
+                  <div>*Email Address</div>
+                  <div><input style="width: 100%;" type="text" id="email" class="field-divided"
+                      placeholder="joe.zebraffe@bambora.com" />
+                  </div>
+                  <br>
+                  <div>*Phone Number</div>
+                  <div><input style="width: 100%;" type="text" id="phone" class="field-divided" placeholder="+46 10 66 000 10" /></div>
+                </div>
+                <div style="width: 50%; padding-left: 5px;">
+                  <div>*Company Name</div>
+                  <div><input style="width: 100%;" type="text" id="companyName" class="field-divided" placeholder="" /></div>
+                  <br>
+                  <div>*Company Website</div>
+                  <div><input style="width: 100%;" type="text" id="companySite" class="field-divided" placeholder="" />
+                  </div>
+                  <br>
+                  <div>*Country</div>
+                  <div><input style="width: 100%;" type="text" id="country" class="field-divided" placeholder="" /></div>
+                </div>
+              </div>
               <br>
-              <div>*Email Address</div>
-              <div><input style="width: 100%;" type="text" id="email" class="field-divided" placeholder="joe.zebraffe@bambora.com" /></div>
-              <br>
-              <div>*Phone Number</div>
-              <div><input style="width: 100%;" type="text" id="phone" class="field-divided" placeholder="+46 10 66 000 10" /></div>
-              <br>
-              <div>*Country</div>
-              <div><input style="width: 100%;" type="text" id="country" class="field-divided" placeholder="" /></div>
+              <div>
+                <div>*Tell Us More</div>
+                <textarea style="width: 100%;" rows="3" id="tellMore" class="field-divided" placeholder=""></textarea>
+              </div>
               <br>
               <div style="display: flex; justify-content: flex-end;">
                 <a class="button" onclick="send()" href="javascript:;">Submit</a>
@@ -221,23 +240,17 @@
           <br>
           
           <div>
-            <span>Trends and Insights</span>
-          </div>
-          <div>
-            <strong style="font-size: x-large;">The future of payments</strong>
+            <strong style="font-size: x-large;">Trends and Insights</strong>
           </div>
 
           <div class="content">
             <div style="padding: 20px;">
               <div><img style="width: 100%;" src="image/news1.png" /></div>
-              <div>How generation Z wants to shop</div>
-              <div>In order to attact the next generation of shoppers, retailer will have to invest even more in the shopping experience.</div>
+              <div><a target="_blank" href="https://www.finextra.com/newsarticle/37335/mastercard-hikes-interchange-fees-for-uk-online-purchases-from-the-eu">Mastercard to increase fees for UK purchases from EU</a></div>
             </div>
             <div style="padding: 20px;">
               <div><img style="width: 100%;" src="image/news2.png" /></div>
-              <div>How generation Z wants to shop</div>
-              <div>In order to attact the next generation of shoppers, retailer will have to invest even more in the shopping
-                experience.</div>
+              <div><a target="_blank" href="https://www.forbes.com/sites/jordanmckee/2021/01/28/payments-in-2021-five-trends-driving-industry-transformation/?sh=49d2f4ea2ef3">Payments In 2021: Five Trends Driving Industry Transformation</a></div>
             </div>
             <div style="padding: 20px;">
               <div><img style="width: 100%;" src="image/news3.png" /></div>
@@ -364,6 +377,9 @@
         email: $("#email").val(),
         phone: $("#phone").val(),
         country: $("#country").val(),
+        companyName: $("#companyName").val(),
+        companySite: $("#companySite").val(),
+        tellMore: $("#tellMore").val(),
       });
 
       alert("Thanks!");
