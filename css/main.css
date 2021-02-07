@@ -22,7 +22,6 @@ body {
 #contactWrap,
 #copyrightWrap {
   display: flex;
-  display: -ms-flexbox;
   justify-content: center;
 }
 
@@ -68,9 +67,7 @@ body {
 
 #home .content {
   display: grid;
-  display: -ms-grid;
   grid-template-columns: 50% 1fr;
-  -ms-grid-columns: 50% 1fr;
 }
 
 #home .slogan {
@@ -88,13 +85,14 @@ body {
 }
 
 .title {
-  text-align: center;
   font-size: 40px;
-  color: #ff0024;
-  font-family: Segoe UI;
 }
 
-
+#benefit .content {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  align-items: center;
+}
 
 
 
