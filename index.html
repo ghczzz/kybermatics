@@ -189,7 +189,7 @@
               <div>
                 <div class="bold">Do you want to know more?</div>
                 <br>
-                <div style="font-size: 12px;">Fill out the form and we'll get in touch with you.</div>
+                <div style="font-size: 14px;">Fill out the form and we'll get in touch with you.</div>
               </div>
             </div>
           
@@ -215,13 +215,13 @@
                   <div><input style="width: 100%;" type="text" id="companySite" class="field-divided" placeholder="" />
                   </div>
                   <br>
-                  <div>Country</div>
+                  <div>Country *</div>
                   <div><input style="width: 100%;" type="text" id="country" class="field-divided" placeholder="" /></div>
                 </div>
               </div>
               <br>
               <div>
-                <div>*Tell Us More</div>
+                <div>Tell Us More</div>
                 <textarea style="width: 100%;" rows="3" id="tellMore" class="field-divided" placeholder=""></textarea>
               </div>
               <br>
@@ -360,18 +360,7 @@
       }
     });
 
-    $(document).ready(function () {
-      $(".slider").slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
-        infinite: true,
-        arrows: false,
-      });
-    });
-
     function send() {
-
-
       $.post("http://emailtunnal.gearhostpreview.com/contact/send", {
         fullName: $("#fullName").val(),
         email: $("#email").val(),
