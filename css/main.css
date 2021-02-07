@@ -86,7 +86,8 @@ body {
 }
 
 #benefitWrap {
-  background-color: rgb(242, 242, 242);
+  background-color: #1B283D;
+  color: white;
 }
 
 .title {
@@ -135,19 +136,6 @@ body {
 #article a {
   text-decoration:none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #headerWrap {
   position: fixed;
