@@ -7,9 +7,6 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
     <link href="css/form.css" rel="stylesheet" type="text/css" />
-    <link href="css/fontIcon.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
 
   <body>
@@ -27,7 +24,7 @@
                 <a href="#aboutLocator">About us</a>
               </li>
               <li>
-                <a href="#">Log in</a>
+                <a target="_blank" href="./login.html">Log in</a>
               </li>
               <li>
                 <a class="button" href="#contactLocator">Contact us</a>
@@ -363,6 +360,38 @@
     });
 
     function send() {
+      let fullName = $("#fullName").val().trim();
+      let email = $("#email").val().trim();
+      let phone = $("#phone").val().trim();
+      let country = $("#country").val().trim();
+      let companyName = $("#companyName").val().trim();
+      let companySite = $("#companySite").val().trim();
+
+      if (!fullName) {
+        alert("Full name cannot be empty!");
+        return;
+      }
+      if (!email) {
+        alert("Email cannot be empty!");
+        return;
+      }
+      if (!phone) {
+        alert("Phone number cannot be empty!");
+        return;
+      }
+      if (!country) {
+        alert("Country cannot be empty!");
+        return;
+      }
+      if (!companyName) {
+        alert("Company name cannot be empty!");
+        return;
+      }
+      if (!companySite) {
+        alert("Company site cannot be empty!");
+        return;
+      }
+
       $.post("http://emailtunnal.gearhostpreview.com/contact/send", {
         fullName: $("#fullName").val(),
         email: $("#email").val(),
