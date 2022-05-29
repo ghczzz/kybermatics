@@ -109,8 +109,8 @@ body {
 }
 
 #article .content {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #contact .content {
