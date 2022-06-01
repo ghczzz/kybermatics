@@ -17,6 +17,7 @@ body {
 #headerWrap,
 #homeWrap,
 #paymentsWrap,
+#dashbaordWrap,
 #benefitWrap,
 #costWrap,
 #sendInfoWrap,
@@ -31,6 +32,7 @@ body {
 #header,
 #home,
 #payments,
+#dashbaord,
 #benefit,
 #cost,
 #sendInfo,
@@ -88,6 +90,14 @@ body {
 #benefitWrap {
   background-color: #1B283D;
   color: white;
+}
+
+#paymentsWrap {
+  background-color: #20252C;
+}
+
+#dashbaordWrap {
+  background-color: #F0F2F8;
 }
 
 .title {
