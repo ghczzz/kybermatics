@@ -87,9 +87,8 @@ body {
   font-size: 50px;
 }
 
-#benefitWrap {
-  background-color: #1B283D;
-  color: white;
+#costWrap {
+  background-color: rgb(242, 242, 242);
 }
 
 #paymentsWrap {
